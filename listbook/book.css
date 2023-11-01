@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+@font-face {
+    font-family: myFont;
+    src: url(../font/myfont.TTF);
+}
+:root {
+    --color-title: #AE9B88;
+}
+body {
+    height: 100vh;
+    background-color: #000000;
+    font-family: myFont;
+    scroll-behavior: smooth;
+}
+.breadscrum a{
+    color: var(--color-title);
+    text-decoration: none;
+    font-size: var(--fontSize-content);
+    font-weight: 400;
+}
+#active{
+    color: white;
+}
+.breadscrum span {
+    margin: 0 5px;
+    color: var(--color-title);
+}
+.container{
+    padding: 0 163px;
+}
+.book{
+    padding-top: 30px;
+}
+.bookLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.breadscrum{
+    margin-top: 70px;
+}
+.breadscrum a, .breadscrum span{
+    font-weight: 400;
+    font-size: 24px;
+}
+.bookList{
+    margin-top: 70px;
+    display: flex;
+    gap: 50px;
+}
+.bookItem{
+    width: 304px;  
+}
+.bookItemContent{
+    text-align: center;
+    margin-top: 20px;
+}
+.bookItemContent p{
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+}
+.bookItemContent span{
+    display: block;
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--color-title);
+}
+.copyRight{
+    margin-top: 80px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 400;
+    opacity: .6;
+}

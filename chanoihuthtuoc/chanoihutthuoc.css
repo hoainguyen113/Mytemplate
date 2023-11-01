@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+@font-face {
+    font-family: myFont;
+    src: url(../font/myfont.TTF);
+}
+:root {
+    --color-title: #AE9B88;
+}
+body {
+    height: 100vh;
+    background-color: #000000;
+    font-family: myFont;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+.hutThuoc{
+    display: flex;
+}
+ul{
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.hutThuocImg {
+    position: relative;
+}
+.hutThuocImg a{
+    top: 5%;
+    left: 5%;
+    position: absolute;
+    opacity: .6;
+}
+.hutThuocRight{
+    width: 80%;
+}
+.hutThuocRightContent{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.hutThuocRight p{
+    color: #fff;
+    width: 80%;
+    font-size: 14px;
+    font-weight: 400;
+}
+.list-image{
+
+}
+.image-item{
+
+}
+.huThuocRightMap{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 20px;
+}
+.huThuocRightMap img:nth-child(2){
+    position: absolute;
+    left: 39%;
+}
+.huThuocRightMap span {
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    left: 42%;
+}
+.bookDetailBodyImageIcon{
+
+}
+.bookDetailBodyImageIcon{
+    margin-top: 30px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.bookDetailBodyImageIcon img:first-child{
+    margin-right: 10px;
+}

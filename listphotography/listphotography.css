@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+@font-face {
+    font-family: myFont;
+    src: url(../font/myfont.TTF);
+}
+:root {
+    --color-title: #AE9B88;
+    --fontSize-content: 20px;
+    --fontSize-icon: 45px;
+}
+body {    
+    font-family: myFont; 
+    background-color: #000000;   
+    color: white;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--color-title);
+    height: 20px;
+}
+::-webkit-scrollbar{
+    width: .1px;   
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    padding: 0 16px;
+}
+.productLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.productLogoImg{
+    width: 120px;
+    height: 110px;     
+}
+.productLogoImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.productFilter, .breadscrum{
+    padding-left: 30px;
+}
+.breadscrum{
+    margin: 20px 0;
+}
+.productFilter i{
+    font-size: var(--fontSize-icon);
+    color: var(--color-title);
+    cursor: pointer;
+}
+.productFilter{
+    display: flex;
+}
+.productFilterList{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 0;
+    opacity: 0;
+    font-size: 13px;
+    cursor: pointer;
+}
+.productFilterItem span:hover{
+    color: var(--color-title);
+}
+.productFilterList .productFilterItem:last-child{
+    position: relative;  
+    z-index: 1;
+}
+.sortByList{    
+    list-style: none;
+    position: absolute;
+    width: 100px;
+    z-index: 1;
+}
+.sortByList li{
+    margin: 10px 0;
+    font-size: 15px;
+    font-weight: 400;
+}
+.sortByList li:hover{
+    color: var(--color-title);
+}
+.hide{
+    display: none;
+}
+.animationFilter{
+    animation: filter .5s linear forwards;
+}
+.breadscrum a{
+    color: var(--color-title);
+    text-decoration: none;
+    font-size: var(--fontSize-content);
+    font-weight: 400;
+}
+#active{
+    color: white;
+}
+.breadscrum span {
+    margin: 0 5px;    
+}
+.listPhoto{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+.listphotoItem{
+    padding: 7px;  
+    width: 25%;
+    height: 220px; 
+}
+.listphotoItem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.pagination, .copyRight{
+    display: flex;
+    justify-content: center;
+}
+.pagination span{
+    font-size: 15px;
+    cursor: pointer;
+    margin: 20px;
+    color: var(--color-title);
+}
+.pagination svg:last-child {
+    margin-left: 15px;
+}
+.copyRight {
+    padding-bottom: 20px;
+}
+.copyRight p{
+    font-size: 10px;
+    opacity: .6;
+}
+@keyframes filter {
+    0%{
+        width: 0%;
+    }
+    80%{
+        width: 50%;       
+    }
+    100%{
+        width: 50%; 
+        opacity: 1;
+    }
+}

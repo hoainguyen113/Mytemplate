@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: myFont;
+    src: url(../font/myfont.TTF);
+}
+:root {
+    --color-title: #AE9B88;
+    --fontSize-content: 20px;
+    --fontSize-title: 45px;
+    --fontSize-second-title: 30px;
+    --fontSize-icon: 28px;
+}
+body {
+    height: 100vh;
+    background-color: #000000;
+    font-family: myFont;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.bigography{
+    display: flex;
+    color: white;    
+    width: 100vw;
+    height: 100vh;
+}
+.leftSide{
+    text-align: center;
+    width: 50vw;
+}
+.leftSideLogo{
+    text-align: left;
+    width: 150px;
+    margin-left: 20px;
+    margin-top: 15px;
+    display: block;
+}
+.leftSideLogo img{
+    width: 100%;
+}
+.leftSideContent{
+    margin-top: 50px;
+}
+.leftSideContent h1{
+    font-size: var(--fontSize-title);
+    color: var(--color-title);
+    padding: 10px 20px;
+    font-weight: 400;
+}
+.leftSideContent p{
+    font-size: var(--fontSize-second-title);
+    margin-top: 35px;
+}
+.leftSideContentSub{
+   width: 400px;
+   display: flex;
+   justify-content: center;
+   margin: auto;
+   margin-top: 65px;
+   position: relative;
+   transform: translateX(-20px);
+}
+.leftSideContentSub p{    
+    font-size: var(--fontSize-content);
+}
+.leftSideContentSub i{
+    font-size: var(--fontSize-icon);
+}
+.leftSideContentSub i:first-child{    
+    transform: translateY(20px);
+}
+.leftSideContentSub i:last-child{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateX(30px);
+}
+.rightSide{
+    width: 50vw;
+    height: 100vh;
+    flex-shrink: 0;
+}
+.rightSide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*elife_____________________________________*/
+.eLife{
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    text-align: center;  
+    padding-top: 15%;
+}
+.eLifeTitle{
+    margin: 50px 0;
+    font-size: var(--fontSize-title);
+    color: var(--color-title);    
+}
+.eLifeContent{
+    max-width: 700px;
+    font-size: var(--fontSize-content);
+    text-align: justify;    
+    margin: auto;          
+}
+.eLifeContent p span:first-child{
+    margin: 20px 0;
+    display: block;
+}
+.eLifeContent p span:last-child{
+    margin-top: 20px;
+    display: block;
+}
+/*section 3*/
+.page3{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.page3Content{
+    margin: 0 200px;
+}
+.page3Content i{
+    position: absolute;
+    font-size: var(--fontSize-icon);
+}
+.page3Content i:first-child{
+    left: -10px;
+    transform: translate(-29px, -10px);
+}
+.page3Content i:last-child{
+    right: -20px;
+    bottom: -15px;
+}
+.page3Content {
+    font-size: var(--fontSize-content);
+    text-align: center;
+    max-width: 200px;
+    position: relative;
+}
+.page3Content p{
+    text-align: center;
+}
+/*Carrer*/
+.career{
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;   
+}   
+.careerTitle{
+    color: var(--color-title);
+    text-align: center;
+    padding-bottom: 55px;  
+}
+.careerTitle h1{
+    font-size: var(--fontSize-title);
+    font-weight: 400;
+}
+.containerCareer{
+    margin-top: 50px;
+}
+.careerContent{
+    max-width: 1000px;
+    font-size: var(--fontSize-content);
+    margin: auto;
+    text-align: justify;
+    margin-top: 9px;
+}
+/*page 5_________*/
+.page5{
+    color: white;
+    width: 100vw;
+    height: 100vh;
+}
+.containerPage5{
+    display: flex;
+    align-items: center;    
+}
+.containerPage5 img{
+    object-fit: cover;
+    object-position: center;
+}
+.page5Content{
+    width: 50vw;
+    text-align: center;
+    font-size: var(--fontSize-content);
+    position: relative;
+}   
+.page5Content p{
+    max-width: 300px;
+    margin: auto;
+}
+.page5Content i{
+   position: absolute;
+   font-size: var(--fontSize-icon);
+}
+.page5Content i:first-child{
+    left: 26.5%;
+    transform: translateY(-8px);
+}
+.page5Content i:last-child{
+    right: 26.5%;
+    transform: translateY(-20px);
+}
+.page5ImageWrapper img{
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+.page5ImageRow2 {
+    display: flex;
+}
+.page5ImageRow2 img{
+    padding-bottom: 0;
+}
+.page5ImageRow2 img:first-child{
+    padding-right: 5px;
+}
+.page5ImageRow2 img:last-child{
+    padding-left: 5px;
+    padding-right: 15px;
+}
+/*artline___________________________________________________*/
+.fineArt{
+    height: 100vh;
+    width: 100vw;
+    color: white;    
+}
+.fineArtTop{
+    margin-top: 100px;
+}
+.fineArtTop h1{
+    font-size: var(--fontSize-title);
+    text-align: center;
+    color: var(--color-title);
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+.fineArtTopContent{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+.fineArtTopContent p{
+    max-width: 1000px;
+    text-align: left;
+}
+.fineArtTopContent a{
+    color: white;
+}
+.fineArtBottom{
+    text-align: center;
+    margin-top: 65px;
+}   
+.fineArtBottom h1 {
+    font-size: var(--fontSize-second-title);
+    font-weight: 400;
+    color: var(--color-title);
+    margin-bottom: 30px;
+}
+.fineArtBottomWrapperImg{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
+.fineArtBottomWrapperImg .fineArtBottomImgItem:first-child p{
+    transform: translateY(-7.5px);
+}
+.fineArtBottomImgItem{
+    width: 25%; 
+}
+.fineArtBottomImgItem p{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 100;
+    margin-top: 10px;
+}
+
+.fineArtBottomImgItem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.fineArt footer {
+    border-top: 1px solid var(--color-title);    
+    margin-top: 50px;  
+}
+
+.container{
+    padding: 0 150px;
+}
+.footerList{
+    padding: 50px 0;
+    display: flex;
+    gap: 15%;
+}
+.footerItem h3{
+    font-weight: 400;
+    color: var(--color-title);
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.footerItemTitle p{
+    opacity: 1;
+    color: #fff;
+    margin: 20px 0;
+    font-weight: 400;
+    font-size: 14px;
+}
+#copyRight{
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    opacity: .6;
+}
+.formFooter{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.formFooter button{    
+    outline: none;
+    border: 1px solid var(--color-title);
+    background-color: transparent;
+    color: var(--color-title);
+    padding: 10px 20px;
+}
+.formInput{
+    margin-top: 20px;
+    width: 250px;
+    height: 60px;
+}
+.formFooterIcon {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.formFooterIcon i{
+    font-size: 30px;
+    color: var(--color-title);
+}
